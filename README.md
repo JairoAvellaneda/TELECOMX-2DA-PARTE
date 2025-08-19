@@ -7,26 +7,41 @@ Se aplicaron técnicas de análisis exploratorio, preprocesamiento, modelado sup
 
 ---
 
-## 🗂️ Estructura del Proyecto
-Extracción
-**Eliminación de columnas irrelevantes**
-  Encoding
-  Verificación de la Proporcion de Cancelación (Churn)
-  Balanceo de Clases
-  Normalización y estandarización
-**CORRELACION Y SELECCIÓN DE VARIABLES**
-  Análisis de correlación
-  Analisis Dirigido
-**MODELADO PREDICTIVO**
-  Separación de Datos
-  Creación de Modelos
-  ¿Por qué normalizar los datos?
-  Evaluación de Modelos
-  Comparación de desempeño entre modelos
-**INTERPRETACIÓN Y CONCLUSIONES**
-  Analisis de la Importancia de las Variables
-  CONCLUSIÓN
-  Informe Final: Análisis de Cancelación de Clientes y Estrategias de Retención
+## 🧠 Estructura del Proyecto
+
+### Extracción y Preprocesamiento
+- Eliminación de columnas irrelevantes  
+- Codificación de variables categóricas (`Encoding`)
+- Verificación de la proporción de cancelación (`Churn`)
+- Balanceo de clases con técnicas como SMOTE
+- Normalización y estandarización de variables numéricas
+
+---
+
+### Correlación y Selección de Variables
+**CORRELACIÓN Y ANÁLISIS DIRIGIDO**
+- Análisis de correlación entre variables predictoras
+- Selección dirigida según relevancia y redundancia
+
+---
+
+### Modelado Predictivo
+**FLUJO DE MODELADO**
+- Separación de datos en entrenamiento y prueba (`train_test_split`)
+- Creación de modelos: Regresión Logística, Random Forest, SVM, KNN
+- Justificación técnica: ¿Por qué normalizar los datos?
+- Evaluación de modelos con métricas como Accuracy, Recall, F1-score
+- Comparación de desempeño entre modelos con visualizaciones
+
+---
+
+### Interpretación y Conclusiones
+**INSIGHTS Y RECOMENDACIONES**
+- Análisis de la importancia de las variables (coeficientes, importancias)
+- Conclusión general del análisis
+- Informe final: Cancelación de clientes y estrategias de retención
+
+---
 
 ##  Preparación de los Datos
 
@@ -43,7 +58,7 @@ Extracción
 - **Normalización:**  
   Se aplicó `StandardScaler` a variables numéricas para modelos sensibles a escala (Regresión Logística, SVM, KNN).
 
-### ✂División de Datos
+### División de Datos
 
 - Se utilizó `train_test_split` con `stratify=y` para mantener la proporción de cancelaciones.
 - División 80/20 entre entrenamiento y prueba.
@@ -68,7 +83,7 @@ Extracción
 
 ---
 
-## 🚀 Instrucciones para Ejecutar el Cuaderno
+## Instrucciones para Ejecutar el Cuaderno
 
 1. **Instalar bibliotecas necesarias:**
 
